@@ -80,6 +80,7 @@ as root:
  ```
 ```
 mkdir -p $HOME/.kube
+rm -rf $HOME/.kube/config
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl cluster-info
