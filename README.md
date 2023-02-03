@@ -100,3 +100,10 @@ kubectl cluster-info
 </p>
 </details>
 
+```
+kubectl get node
+```
+```
+NAME        STATUS     ROLES    AGE   VERSION
+vm-ubuntu   NotReady   master   1h    v1.11.3
+```
