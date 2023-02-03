@@ -107,3 +107,38 @@ kubectl get node
 NAME        STATUS     ROLES    AGE   VERSION
 vm-ubuntu   NotReady   master   1h    v1.11.3
 ```
+```
+watch kubectl get all --all-namespaces
+```
+
+```
+Every 2.0s: kubectl get all --all-namespaces                                                                                                                                                              vm-ubuntu: Fri Feb  3 17:53:47 2023
+
+NAMESPACE     NAME                                    READY   STATUS    RESTARTS   AGE
+kube-system   pod/coredns-78fcdf6894-7g8n7            0/1     Pending   0          1h
+kube-system   pod/coredns-78fcdf6894-fw8jh            0/1     Pending   0          1h
+kube-system   pod/etcd-vm-ubuntu                      1/1     Running   0          1h
+kube-system   pod/kube-apiserver-vm-ubuntu            1/1     Running   0          1h
+kube-system   pod/kube-controller-manager-vm-ubuntu   1/1     Running   0          1h
+kube-system   pod/kube-proxy-sjlms                    1/1     Running   0          1h
+kube-system   pod/kube-scheduler-vm-ubuntu            1/1     Running   0          1h
+
+NAMESPACE     NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)         AGE
+default       service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP         1h
+kube-system   service/kube-dns     ClusterIP   10.96.0.10   <none>        53/UDP,53/TCP   1h
+
+NAMESPACE     NAME                        DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR                   AGE
+kube-system   daemonset.apps/kube-proxy   1         1         1       1            1           beta.kubernetes.io/arch=amd64   1h
+
+NAMESPACE     NAME                      DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+kube-system   deployment.apps/coredns   2         2         2            0           1h
+
+NAMESPACE     NAME                                 DESIRED   CURRENT   READY   AGE
+kube-system   replicaset.apps/coredns-78fcdf6894   2         2         0       1h
+
+```
+
+
+
+
+
