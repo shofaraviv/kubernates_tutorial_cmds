@@ -1,5 +1,8 @@
 # kubernates_tutorial_cmds
 
+```
+https://www.youtube.com/watch?v=a_sQuL2mOAY
+```
 ## UBUNTU
 ```
 < ubuntu-18.04.3-live-server-amd64.iso >
