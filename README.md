@@ -151,5 +151,9 @@ vm-ubuntu   Ready    master   2h    v1.11.3
 master como master e worker
 kubectl taint nodes --all node-role.kubernetes.io/master-
 ```
+```
+kubectl run kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1 --port=8080
+kubectl get deply
+```
 
 
