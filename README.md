@@ -36,3 +36,42 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-
 sudo chmod -x /usr/local/bin/docker-compose 
 docker-compose up -d
 ```
+## KUBERNATES
+
+```sudo su
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+deb https://apt.kubernetes.io/ kubernetes-xenial main
+EOF
+apt-get update
+sudo apt-get install -y kubernetes-cni=0.6.0-00
+sudo apt-get install -y kubelet=1.11.3-00
+sudo apt-get install -y kubeadm=1.11.3-00
+sudo apt-get install -y kubectl=1.11.3-00
+apt-mark hold kubelet kubeadm kubectl
+exit
+```
+```
+sudo swapoff -a
+sudo kubeadm reset
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16
+ ```
+ ```
+ Your Kubernetes master has initialized successfully!
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+You can now join any number of machines by running the following on each node
+as root:
+
+  kubeadm join 192.154.1.156:6443 --token 94ymzj.rgke5qwaru3in6t4 --discovery-token-ca-cert-hash sha256:c6f5a13b51ed7b08e2323df2309c302b5222a9cae4dc0cc5a90ccc29b4e9ccaa
+ ```
+
