@@ -82,6 +82,7 @@ as root:
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
+kubectl cluster-info
 ```
 
 <details><summary>CLICK ME</summary>
@@ -91,7 +92,18 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ```ruby
    puts "Hello World"
+   Kubernetes control plane is running at https://192.154.1.156:6443
+   KubeDNS is running at https://192.154.1.156:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+   To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
 
 </p>
 </details>
+
+<html>
+  <head>
+   Kubernetes control plane is running at https://192.154.1.156:6443
+   KubeDNS is running at https://192.154.1.156:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+   To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+  </head>
+</html>
