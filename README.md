@@ -108,6 +108,12 @@ kubectl get node
 NAME        STATUS     ROLES    AGE   VERSION
 vm-ubuntu   NotReady   master   1h    v1.11.3
 ```
+
+```
+watch kubectl
+
+```
+
 ```
 watch kubectl get all --all-namespaces
 ```
