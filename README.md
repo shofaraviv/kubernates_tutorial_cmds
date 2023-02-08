@@ -174,3 +174,14 @@ $ kubectl get pods
 NAME                  READY   STATUS    RESTARTS   AGE
 kubernetes-bootcamp   1/1     Running   0          5m
 ```
+```
+kubectl logs kubernetes-bootcamp -f
+```
+```
+kubectl proxy
+```
+```
+curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/
+~$ curl http://localhost:8001/api/v1/namespaces/default/pods/kubernetes-bootcamp/proxy/
+Hello Kubernetes bootcamp! | Running on: kubernetes-bootcamp | v=1
+```
