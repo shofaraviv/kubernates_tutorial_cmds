@@ -140,6 +140,7 @@ kube-system   replicaset.apps/coredns-78fcdf6894   2         2         0       1
 ```
 ```
 kubectl get nodes
+kubectl get pods
 ```
 ```
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/v0.10.0/Documentation/kube-flannel.yml
