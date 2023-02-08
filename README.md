@@ -167,6 +167,10 @@ kubectl taint nodes --all node-role.kubernetes.io/master-
 ```
 kubectl run kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1 --port=8080
 kubectl get deploy
+kubectl get  pod/kubernetes-bootcamp
 ```
-
-
+```
+$ kubectl get pods
+NAME                  READY   STATUS    RESTARTS   AGE
+kubernetes-bootcamp   1/1     Running   0          5m
+```
