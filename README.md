@@ -193,4 +193,7 @@ Hello Kubernetes bootcamp! | Running on: kubernetes-bootcamp | v=1
 ```
 kubectl get pod/kubernetes-bootcamp -o yaml
 ```
+```
+kubectl edit pod/kubernetes-bootcamp -o yaml
+```
 
