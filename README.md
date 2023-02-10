@@ -182,6 +182,15 @@ kubectl proxy
 ```
 ```
 curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/
-~$ curl http://localhost:8001/api/v1/namespaces/default/pods/kubernetes-bootcamp/proxy/
+```
+```
+curl http://localhost:8001/api/v1/namespaces/default/pods/kubernetes-bootcamp/proxy/
+```
+```
 Hello Kubernetes bootcamp! | Running on: kubernetes-bootcamp | v=1
 ```
+
+```
+kubectl get pod/kubernetes-bootcamp -o yaml
+```
+
