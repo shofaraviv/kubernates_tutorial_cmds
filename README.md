@@ -213,3 +213,8 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/
 ```
 kubectl expose deployment kubernetes-dashboard --name=kubernetes-dashboard-nodeport --port=443 --target-port=8443 --type=NodePort -n kube-system
 ```
+#### sevice account
+```
+kubectl desfribe sa kubernetes-dashboard -n kube-system
+```
+
