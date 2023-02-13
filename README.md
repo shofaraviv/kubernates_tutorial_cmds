@@ -221,6 +221,7 @@ kubectl describe sa kubernetes-dashboard -n kube-system
 kubectl get secret <TOKEN-ID> -n kube-system -o yaml
 ```
 ```
+kubectl get secret kubernetes-dashboard-token-f8pcf -n kube-system
 kubectl get secret kubernetes-dashboard-token-f8pcf -n kube-system -o yaml
 ```
 ```
