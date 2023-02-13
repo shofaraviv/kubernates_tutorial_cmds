@@ -4,6 +4,15 @@
 https://www.youtube.com/watch?v=a_sQuL2mOAY
 https://www.youtube.com/watch?v=4ht22ReBjno
 ```
+```
+sudo dpkg -i docker-ce_17.03.2~ce-0~ubuntu-xenial_amd64.deb
+/usr/local/bin/docker-compose
+
+/usr/bin/kubectl
+/usr/bin/kubeadm
+/usr/bin/kubelet
+```
+
 ## UBUNTU
 ```
 < ubuntu-18.04.3-live-server-amd64.iso >
