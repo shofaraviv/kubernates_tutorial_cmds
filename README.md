@@ -215,6 +215,6 @@ kubectl expose deployment kubernetes-dashboard --name=kubernetes-dashboard-nodep
 ```
 #### sevice account
 ```
-kubectl desfribe sa kubernetes-dashboard -n kube-system
+kubectl describe sa kubernetes-dashboard -n kube-system
 ```
 
