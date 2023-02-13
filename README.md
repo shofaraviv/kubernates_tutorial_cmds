@@ -209,3 +209,7 @@ kubectl edit pod/kubernetes-bootcamp -o yaml
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
 ```
+#### expose porta
+```
+kubectl expose deployment kubernetes-dashboard --name=kubernetes-dashboard-nodeport --port=443 --target-port=8443 --type=NodePort -n kube-system
+```
