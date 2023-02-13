@@ -237,6 +237,9 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiw
 #### Criando Service Account e associando permissao 'cluster-admin'
 ```
 kubectl create serviceaccount kubeadmin -n kube-system 
+```
+#### Permissoes para o usuario
+```
 kubectl create clusterrolebinding kubeadmin-binding --clusterrole=cluster-admin --serviceaccount=kube-system:kubeadmin
 ```
 ```
