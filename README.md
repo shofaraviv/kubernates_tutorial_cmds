@@ -239,3 +239,16 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiw
 kubectl create serviceaccount kubeadmin -n kube-system 
 kubectl create clusterrolebinding kubeadmin-binding --clusterrole=cluster-admin --serviceaccount=kube-system:kubeadmin
 ```
+```
+kubectl describe sa kubeadmin -n kube-system
+```
+```
+Name:                kubeadmin
+Namespace:           kube-system
+Labels:              <none>
+Annotations:         <none>
+Image pull secrets:  <none>
+Mountable secrets:   kubeadmin-token-ltdlc
+Tokens:              kubeadmin-token-ltdlc
+Events:              <none>
+```
