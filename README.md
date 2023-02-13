@@ -38,6 +38,8 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 sudo apt-get install -y docker-ce=17.03.2~ce-0~ubuntu-xenial
 
+sudo apt --fix-broken install
+
 sudo groupadd docker
 sudo usermod -aG docker ${USER}
 newgrp docker
