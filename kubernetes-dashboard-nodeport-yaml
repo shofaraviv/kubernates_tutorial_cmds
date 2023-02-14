@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: kubernetes-dashboard-nodeport-yaml
+  namespace: kube-system
 spec:
   type: NodePort
   selector:
