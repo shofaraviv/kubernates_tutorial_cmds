@@ -281,3 +281,11 @@ kubectl apply -f kubernetes-dashboard-nodeport-yaml
 kubectl delete  service/kubernetes-dashboard-nodeport -n kube-system
 ```
 #### Criando nossos namespaces
+
+```
+kubectl get ns
+```
+
+```
+kubectl apply -f ns.yaml
+```
