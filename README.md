@@ -277,3 +277,6 @@ vm-ubuntu@vm-ubuntu:~/Downloads$ vi kubernetes-dashboard-nodeport-yaml
 kubectl apply -f kubernetes-dashboard-nodeport-yaml
 ```
 
+```
+kubectl delete  service/kubernetes-dashboard-nodeport -n kube-system
+```
